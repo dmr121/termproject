@@ -97,15 +97,6 @@ body{
   background-color: var(--background-color);
 }
 
-#menuButton #dropdown a {
-  color: var(--main-text-color);
-}
-
-#menuButton #dropdown a:hover {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
 #menuBar {
   background-color:var(--accent-color);
   height:42px;
@@ -143,6 +134,15 @@ body{
 #menuButton:hover a {
   color: var(--main-text-color);
   text-decoration: none;
+}
+
+#menuButton #dropdown a {
+  color: var(--main-text-color);
+}
+
+#menuButton #dropdown a:hover {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 #menuButton #dropdown {

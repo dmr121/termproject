@@ -124,6 +124,7 @@ body{
   width: 100%;
   z-index: 1;
 }
+
 #menuButton #dropdown div {
   font-size: 14px;
   text-align: center;
@@ -133,6 +134,7 @@ body{
   transition-duration: 0.2s;
   border-bottom: 1px solid var(--background-color);
 }
+
 #menuButton #dropdown div:hover {
   color: var(--accent-color);
   background-color: var(--background-highlight);
