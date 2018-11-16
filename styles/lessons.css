@@ -1,4 +1,73 @@
-:root {
+#arrays {
+  --background-color: #0E0B16;
+  --accent-color: rgba(131, 189, 114, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+
+#conditionals {
+  --background-color: #0E0B16;
+  --accent-color: rgba(230, 95, 108, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+
+#forloops {
+  --background-color: #0E0B16;
+  --accent-color: rgba(216, 153, 90, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+
+#switches {
+  --background-color: #0E0B16;
+  --accent-color: rgba(131, 189, 114, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+
+#variables {
+  --background-color: #0E0B16;
+  --accent-color: rgba(237, 192, 101, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+#whileloops {
   --background-color: #0E0B16;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
