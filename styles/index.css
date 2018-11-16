@@ -1,5 +1,7 @@
 :root {
   --background-color: #0E0B16;
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
   --accent-color: rgba(43, 184, 197, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -67,15 +69,26 @@ body{
 #menuButton #dropdown {
   font-size: 12px;
   text-align: left;
-  width: inherit;
   padding-top: 12px;
   display: none;
   position: absolute;
+  left: 0px;
+  width: 100%;
   z-index: 1;
 }
-
-#menuButton #dropdown p:hover {
+#menuButton #dropdown div {
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  transition-duration: 0.2s;
+  border-bottom: 1px solid var(--background-color);
+}
+#menuButton #dropdown div:hover {
   color: var(--accent-color);
+  background-color: var(--background-highlight);
+  border-bottom: 1px solid var(--background-highlight-bright);
 }
 
 #page {

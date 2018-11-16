@@ -1,5 +1,7 @@
 #arrays {
   --background-color: #0E0B16;
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -14,6 +16,8 @@
 
 #conditionals {
   --background-color: #0E0B16;
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
   --accent-color: rgba(230, 95, 108, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -30,7 +34,7 @@
   --background-color: #161122;
   --background-highlight: #211a33;
   --background-highlight-bright: #372b55;
-  --accent-color: #D8995A;
+  --accent-color: #EDC065;
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
   rgba(230, 95, 108, 1);
@@ -44,6 +48,8 @@
 
 #switches {
   --background-color: #0E0B16;
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -58,7 +64,9 @@
 
 #variables {
   --background-color: #0E0B16;
-  --accent-color: rgba(237, 192, 101, 1);
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
+  --accent-color: #EDC065;
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
   rgba(230, 95, 108, 1);
@@ -71,6 +79,8 @@
 }
 #whileloops {
   --background-color: #0E0B16;
+  --background-highlight: #161122;
+  --background-highlight-bright: #2b2244;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -155,6 +165,7 @@ body{
   border-bottom: 1px solid var(--background-color);
 }
 #menuButton #dropdown div:hover {
+  color: var(--accent-color);
   background-color: var(--background-highlight);
   border-bottom: 1px solid var(--background-highlight-bright);
 }
