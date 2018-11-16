@@ -50,6 +50,36 @@
         so when you need to make a change, you have to change each of the hundreds of
         instances of <code>3.14</code> to <code>3.14159</code>.</p>
         <p> Work smarter, not harder. Use variables instead. </p>
+        <p> Instead of changing each instance of pi individually, wouldn't it be nice to
+        be able to change all instances of pi with one line of code? Well it's easy. Set the
+        variable pi to your specified number:</p>
+        <p style="color:var(--accent-color)">Example:</br>
+          <kbd>float pi = 3.14; </br>
+          cout << 2 * 2 * pi;   // Prints 12.56</br>
+          pi = 3.14159;  // Change the value of pi to be more precise</br>
+          cout << 2 * 2 * pi;   // Prints 12.56636</kbd></p>
+        <p> All we had to do was change the value of the variable to change all
+        instances of it further down without changing each <code>pi</code> individually.
+        This consolidates the coding process.</p>
+        <p> Using variables also helps to set a number that your human mind can recognize
+        easily.</p>
+        <p style="color:var(--accent-color)">For example:</br><kbd>int numberOfFlowers = 6;</br>
+           float pricePerFlower = 1.23;</br>
+           float totalPrice = numberOfFlowers * pricePerFlower;</br>
+           cout << totalPrice;   // Prints 7.38</kbd></p>
+        <p> Notice that because we named the variable something personal, we can easily
+        tell what it represents. <code>numberOfFlowers</code> obviously stands for the
+        number of flowers. It would have made little sense to name it something
+        impersonal like <code>x</code> or even <code>flowers</code>. These aren't
+        good variable names because they are very ambiguous.
+        <p style="color:var(--accent-color);font-size:30"> C++ Variables </p>
+        <p><ul>
+          <li><code>bool</code> - can be either true or false</li>
+          <li><code>char</code> - one byte</li>
+          <li><code>int</code> - integer </li>
+          <li><code>float</code> - number with decimal points</li>
+          <li><code>double</code> - even more decimal precision than a float</li>
+          <li><code>void</code> - represents the absence of a type</li></ul></p>
 
     </div>
   </br>
