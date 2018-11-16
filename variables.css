@@ -112,6 +112,7 @@ body{
 #paragraphs {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  font-size: 18px;
   color: var(--main-text-color);
 }
 
