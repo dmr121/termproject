@@ -287,10 +287,10 @@ h1, h2, h3, h4, h5 {
 /* Styles Specific to switches.html */
 #switchImage
 {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   float: left;
-  margin-left: 30%;
+  margin-left: 20%;
   position: absolute;
 }
 
