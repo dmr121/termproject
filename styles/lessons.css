@@ -224,3 +224,24 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   margin-bottom: 0px;
 }
+/* Syles Specific to forloop.html */
+#loop {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-left: 30%;
+  position: absolute;
+  -webkit-animation: loop 40s linear infinite;
+  -moz-animation: loop 40s linear infinite;
+  animation: loop 40s linear infinite;
+}
+@-moz-keyframes loop { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes loop { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes loop { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#codeSnippit {
+  border: 1px solid var(--accent-color);
+  height: 230px;
+  width: 580;
+  margin-top: 15%;
+}

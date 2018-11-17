@@ -7,9 +7,6 @@
     rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/lessons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-
-    </script>
     <title> For Loops </title>
     <meta charset = 'utf-8' />
   </head>
@@ -49,7 +46,51 @@
       <hr id = "line"></hr>
       </br></br>
       <div id = "paragraphs" class = "container">
-
+        <div class="row">
+          <div class="col">
+            <h1>What is a For Loop?</h1>
+            <p>
+              A "for loop" does what it sounds like: it loops <i>for</i> a
+              specified number of iterations. This can be useful for better
+              automating your code. Upon each iteration of the for loop, the
+              inner contents are run, though it is possible to manipulate each
+              iteration. This per-iteration-manipulation will become more apparent
+              when we see just how this loop works.
+            </p>
+          </div>
+          <div class="col">
+            <img src="../images/update-arrows.png" id="loop"/>
+          </div>
+          <div class="w-100"></div><br><br><br> <!-- Line break -->
+          <div class="col">
+            <img src="../images/forloopExample.png" id="codeSnippit"/>
+          </div>
+          <div class="col">
+            <h1>For Loop Syntax</h1>
+            <p>
+              Pictured is an example of a for loop delared in C++.  There are
+              three distinct parts to the for loop, each seperated by semicolons.
+              The first declares a new variable "i" and assigns it a value of 1.
+              The second declares the <i>"for"</i> part of the for loop.  In this
+              case, the loop will run so long as the variable "i" is less than 6.
+              Also note that the number "6" can be replaced with a variable,
+              making your code much more portable in the future. The last case
+              declares what will happen to our variable "i" at the end of each
+              iteration. In this example, at the end of each iteration "i" will
+              be incremented by 1.
+            </p>
+            <p>
+              As for what happens during each iteration, we must look to what is
+              included inside the subsequent "block" of code (encapsulated by
+              curly brackets).  In this case, we will output "i" and a space for
+              every time this loop runs.
+            </p>
+          </p>
+            Giving us a final output of
+          </p>
+          <span style="font-size: 20px;">1 2 3 4 5</span>
+          </div>
+        </div>
       </div>
         </br>
       <hr id = "line"></hr>
