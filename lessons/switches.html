@@ -10,7 +10,7 @@
     <script>
 
     </script>
-    <title> For Loops </title>
+    <title> Switch Statements </title>
     <meta charset = 'utf-8' />
   </head>
   <body>
@@ -49,6 +49,96 @@
       <hr id = "line"></hr>
       </br> </br>
       <div id = "paragraphs" class = "container">
+        <div class="row">
+          <div class="col">
+            <img src="../images/tree-structure.png" id="switchImage"/>
+            <!-- Image found here:
+            https://www.flaticon.com/free-icon/tree-structure_3637
+            -->
+          </div>
+          <div class="col">
+            <h1>What is a Switch Statement?</h1>
+            <p>
+              You've already been introduced to if/else conditionals, and the
+              concept of a switch statement is fairly similar. Switches test for
+              conditions and, if true, execute a block of code just like if/elses
+              do. If/Else statements are great, but they do have one drawback.
+              What happens when you need to check for a large amount of conditions?
+              This can become a staggeringly long list of if/else's.  This is where
+              Switches come in handy.  A switch statement allows for a more clear
+              way of writing all of these "ifs" and "elses". Furthermore, if the
+              number of conditions being tested is large enough, switch statements
+              actually perform better than their if/else counterparts.
+            </p>
+          </div>
+          <div class="w-100"></div><br><br><br> <!-- Line break -->
+          <div class="col">
+            <h1>But Why Use Them?</h1>
+            <p>
+              If Switch statements do the same thing as if/else, why bother learning
+              the same thing twice? While the performance boost (in some cases)
+              is nice to have, one of the major benefits of switch statements
+              is improved readability.  Take the example of if/else's shown here.
+              While there are only five conditions shown, imagine how confusing it
+              might be to have several more with far more complicated conditions!
+              Thus, switch statements are best used to improve the work conditions
+              of the programmer, by improving readability.  This variety of methods
+              for doing the same thing is known as
+              <a href="https://en.wikipedia.org/wiki/Syntactic_sugar">
+                Syntactic Syntactic Sugar
+              </a>
+              as it "makes the language 'sweeter' for human use".
+            </p>
+          </div>
+          <div class="col">
+            <img src="../images/switchCounterExample.png" id="switchCodeSnippit"
+                style = "margin-left: 3%;"/>
+          </div>
+          <div class="w-100"></div><br><br><br> <!-- Line break -->
+          <div class="col">
+            <img src="../images/switchExample.png" id="switchCodeSnippit"
+                 style="margin-top: 10%;"/>
+          </div>
+          <div class="col">
+            <h1>Switch Syntax</h1>
+            <p>
+              Let's walk through the example switch pictured here. First, a variable
+              "number" of type int is declared and initialized to 2.  Then, the switch
+              statement begins. To declare a switch statement, we write switch()
+              and whatever lies inside the parenthesis, in this case "number" will
+              what be what is compared. If the given variable satisfies any of the
+              cases, denoted "
+              <code>
+                case #:
+              </code>
+              " then the code between "
+              <code>
+                case #:
+              </code>
+              " and "
+              <code>
+                break;
+              </code>
+              " will be executed, and the rest of the switch cases will be ignored.
+              In this example, if number is equal to 1, 2, 3, or 4, then it will
+              satisfy those cases. "
+              <code>
+                default:
+              </code>
+              " denotes an instance in which none of the other cases were satisfied
+              much like the last "else" of an if/else.  Notice the use of colins
+              at the beginning of each case, and the "
+              <code>
+                break;
+              </code>
+              " after each case.  You can think of these like curly brackets for
+              a block of code to be executed. Without the breaks, if case 1 was
+              satisfied, the code for case 1, 2, 3, 4, and default would all be
+              executed.  This could, however, be desired behavior in some cases
+              (another advantage of switch statements).
+            </p>
+          </div>
+        </div>
       </div>
       </br>
       <hr id = "line"></hr>

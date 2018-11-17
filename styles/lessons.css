@@ -239,9 +239,24 @@ h1, h2, h3, h4, h5 {
 @-webkit-keyframes loop { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes loop { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-#codeSnippit {
+#forLoopCodeSnippit {
   border: 1px solid var(--accent-color);
   height: 230px;
   width: 580;
   margin-top: 15%;
+}
+/* Styles Specific to switches.html */
+#switchImage
+{
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-left: 30%;
+  position: absolute;
+}
+
+#switchCodeSnippit {
+  border: 1px solid var(--accent-color);
+  height: 360px;
+  width: 560px;
 }
