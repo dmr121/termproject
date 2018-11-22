@@ -65,16 +65,54 @@
               exit;
           }
 
-          $query = "SELECT * FROM Minigames";
-          $result = mysqli_query($db, $query);
-          if (!$result) {
-          print "Error - the query could not be executed";
-          $error = mysqli_error();
-          print "<p>" . $error . "</p>";
-          exit;
-          }
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE if_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE if_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> If Statements: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
 
-          
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE for_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE for_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> For Statements: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
+
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE switch_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE switch_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> Switch Statements: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
+
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE while_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE while_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> While Statements: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
+
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE variable_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE variable_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> Variables: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
+
+          $result1 = mysqli_query($db, "SELECT * FROM Minigames WHERE array_game = 1");
+          $result2 = mysqli_query($db, "SELECT * FROM Minigames WHERE array_game = 0");
+          $num1 = mysqli_num_rows($result1);
+          $num2 = mysqli_num_rows($result2);
+          print "<p style='color:var(--accent-color)'> Arrays: </p>"; 
+          print "</p> Win Ratio: <span style='color:green'>" . $num1/($num1 + $num2) . "</span></br>";
+          print "Loss Ratio: <span style='color:red'>" . $num2/($num1 + $num2) . "</span></p>";
+
           ?>
         </p>
       </div>
