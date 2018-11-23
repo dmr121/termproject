@@ -1,7 +1,10 @@
+html {
+    --background-color: #161122;
+    --background-highlight: #211a33;
+    --background-highlight-bright: #372b55;
+}
+
 #help {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(43, 184, 197, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -15,9 +18,6 @@
 }
 
 #index {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(43, 184, 197, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -31,9 +31,6 @@
 }
 
 #statistics {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(43, 184, 197, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -47,9 +44,6 @@
 }
 
 #technical {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(43, 184, 197, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;

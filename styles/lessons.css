@@ -1,7 +1,10 @@
+html {
+    --background-color: #161122;
+    --background-highlight: #211a33;
+    --background-highlight-bright: #372b55;
+}
+
 #arrays {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -15,9 +18,6 @@
 }
 
 #conditionals {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(230, 95, 108, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -31,9 +31,6 @@
 }
 
 #forloops {
-  --background-color: #161122;
-  --background-highlight: #211a33;
-  --background-highlight-bright: #372b55;
   --accent-color: #EDC065;
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -47,9 +44,6 @@
 }
 
 #switches {
-  --background-color: #161122;
-  --background-highlight: #211a33;
-  --background-highlight-bright: #372b55;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -63,9 +57,6 @@
 }
 
 #variables {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: #EDC065;
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
@@ -78,9 +69,6 @@
   //ONLY CHANGE THE COLORS IN THIS ROOT BOX
 }
 #whileloops {
-  --background-color: #0E0B16;
-  --background-highlight: #161122;
-  --background-highlight-bright: #2b2244;
   --accent-color: rgba(131, 189, 114, 1);
   --main-text-color: #DFDCE3;
   --subtitle-text: #98959b;
