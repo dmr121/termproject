@@ -7,6 +7,8 @@
     $answer5 = $_POST['question5'];
 
     $totalScore = 0;
+    // This could be reusable across all pages starting here if we determine
+    // the correct answer on a per-page basis 
 
     if ($answer1 == "B") { $totalScore++; }
     if ($answer2 == "A") { $totalScore++; }
