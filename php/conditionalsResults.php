@@ -13,5 +13,4 @@
     if ($answer4 == "D") { $score++; }
 
     echo "<div id='results'>$score / 4 correct</div>";
-
-?>
+    ?>
