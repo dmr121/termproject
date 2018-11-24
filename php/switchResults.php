@@ -8,10 +8,10 @@
 
     $score = 0;
 
-    if ($answer1 == "B") { $score++; }
-    if ($answer2 == "C") { $score++; }
-    if ($answer3 == "B") { $score++; }
-    if ($answer4 == "A") { $score++; }
+    if ($answer1 == "C") { $score++; }
+    if ($answer2 == "A") { $score++; }
+    if ($answer3 == "A") { $score++; }
+    if ($answer4 == "B") { $score++; }
     if ($answer5 == "D") { $score++; }
 
     echo "<div id='results'>$score / 5 correct</div>";
