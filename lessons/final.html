@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = 'en' id="switches">
+<html lang = 'en' id="finalChallenge">
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -10,7 +10,7 @@
     <script>
 
     </script>
-    <title> Switch Statements </title>
+    <title> Final Challenge </title>
     <meta charset = 'utf-8' />
   </head>
   <body>
@@ -45,14 +45,44 @@
     <div id = "mainPage" class = "container">
       <div class = "container">
         <h1 id = "title"> Final Challenge </h1>
-        <h2 id = "subtitle"> Do you have what it takes? </h2>
+        <h2 id = "subtitle"> Apply it! </h2>
       </div>
-      <hr id = "line"></hr>
-      </br> </br>
+      <hr id = "line">
+      </br>
       <div id = "paragraphs" class = "container">
-
+        <h1>How it Works</h1>
+        <p>
+          The goal of this mini game is to get the arrow from it's
+          start position to the green tile.  You can accomplish
+          this by using the different C++ coding related buttons.
+          Note that blue tiles represent a wall, red tiles represent
+          an area your arrow can pass through, and green is the goal
+          tile. If you choose a code button that results in your
+          arrow crashing into the wall, you lose. To try again, simply
+          refresh the page!
+        </p>
+        <br>
+        <div id = "gameButtons"><!-- Game starts here -->
+          <button class = "codeButton" onclick="turnRight()">
+            if(wallAhead)<br> { <br>player.turnRight; <br>}
+          </button>
+          <button class = "codeButton" onclick="turnLeft()">
+            if(wallAhead)<br> { <br>player.turnLeft; <br>}
+          </button>
+          <button class = "codeButton" onclick="forLoop()">
+            for(int i = 0; i < 2; ++i) <br>{ <br>player.moveForward; <br>}
+          </button>
+          <button class = "codeButton" onclick="whileLoop()">
+            while(!wallAhead) <br>{ <br>player.moveForward; <br>}
+          </button>
+          <div id = "resultsBox">Game In Progress</div>
+        </div>
+        <div id="challengeWindow">
+          <script src="../js/finalChallenge.js"></script>
+        </div>
       </div>
-      <hr id = "line"></hr>
+      <br><br>
+      <hr id = "line">
       <!-- Page change buttons -->
       <div class="row">
         <div class="col"> <!-- Page back button -->

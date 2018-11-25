@@ -30,6 +30,19 @@ html {
   //ONLY CHANGE THE COLORS IN THIS ROOT BOX
 }
 
+#finalChallenge {
+  --accent-color: rgba(230, 95, 108, 1);
+  --main-text-color: #DFDCE3;
+  --subtitle-text: #98959b;
+  rgba(230, 95, 108, 1);
+  rgba(216, 153, 90, 1);
+  rgba(237, 192, 101, 1);
+  rgba(131, 189, 114, 1);
+  rgba(43, 184, 197, 1);
+
+  //ONLY CHANGE THE COLORS IN THIS ROOT BOX
+}
+
 #forloops {
   --accent-color: #EDC065;
   --main-text-color: #DFDCE3;
@@ -287,7 +300,7 @@ h1, h2, h3, h4, h5 {
 #forLoopCodeSnippit {
   border: 1px solid var(--accent-color);
   height: 230px;
-  width: 580;
+  width: 580px;
   margin-top: 15%;
 }
 /* Styles Specific to switches.html */
@@ -305,3 +318,110 @@ h1, h2, h3, h4, h5 {
   height: 360px;
   width: 560px;
 }
+/* Final Challenge Styles */
+#challengeWindow {
+  border: 1px solid white;
+  height: 502px;
+  width: 602px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#gameButtons {
+  display: inline-block;
+  width: 335px;
+  background-color: var(--background-highlight);
+}
+
+.codeButton {
+  padding: 5px 20px;
+  background-color: #211a33;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  display: block;
+  float: right;
+  text-align: left;
+  transition-duration: 0.5s;
+}
+
+.codeButton:hover {
+  background-color: var(--background-highlight-bright);
+  cursor: pointer;
+}
+
+#resultsBox {
+  background-color: #111;
+  color: #DFDCE3;
+  width: 335px;
+  height: 175px;
+  border: 3px inset #DFDCE3;
+  text-align: center;
+  padding: 70px 25px;
+  display: block;
+  float: right;
+}
+
+.wallTile {
+  height: 100px;
+  width: 100px;
+  border-bottom: 1px inset white;
+  border-right: 1px inset white;
+  background-color: rgba(43, 184, 197, 1);
+  position: relative;
+  float: left;
+  margin: 0px;
+}
+
+.groundTile {
+  height: 100px;
+  width: 100px;
+  border-bottom: 1px inset white;
+  border-right: 1px inset white;
+  background-color: rgba(230, 95, 108, 1);
+  position: relative;
+  float: left;
+  margin: 0px;
+}
+
+.finishTile {
+  height: 100px;
+  width: 100px;
+  border-bottom: 1px inset white;
+  border-right: 1px inset white;
+  background-color: rgba(131, 189, 114, 1);
+  position: relative;
+  float: left;
+  margin: 0px;
+}
+
+#player {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.error {
+  animation: error 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes error {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
