@@ -60,6 +60,11 @@ body{
   background-color: var(--background-color);
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--accent-color);
+  font-family: "Roboto", sans-serif;
+}
+
 #menuBar {
   background-color:var(--accent-color);
   height:42px;
