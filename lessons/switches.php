@@ -81,7 +81,7 @@
             <a href="arrays.html"><div>Arrays</div></a>
             <a href="conditionals.html"><div>If/Else</div></a>
             <a href="switches.<?php  ?>"><div>Switches</div></a>
-            <a href="forloops.html"><div>For Loops</div></a>
+            <a href="forloops.php"><div>For Loops</div></a>
             <a href="whileloops.html"><div>While Loops</div></a>
             <a href="final.html"><div>Final Challenge</div></a>
           </div>
@@ -300,7 +300,7 @@
         </a>
       </div>
       <div class="col"> <!-- Page forward button -->
-        <a href="forloops.html">
+        <a href="forloops.php">
           <div id="nextLesson" style="float: right;">Next Lesson</div>
         </a>
       </div>
