@@ -80,7 +80,7 @@
         </div>
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
-            <a href="variables.html"><div>Variables</div></a>
+            <a href="variables.php"><div>Variables</div></a>
             <a href="arrays.html"><div>Arrays</div></a>
             <a href="conditionals.html"><div>If/Else</div></a>
             <a href="switches.php"><div>Switches</div></a>
@@ -103,7 +103,11 @@
     <div id = "mainPage" class = "container">
       <div class = "container">
         <h1 id = "title"> Switches </h1>
-        <h2 id = "subtitle"> Switch it Up </h2>
+        <h2 id = "subtitle"> Switch it Up <?php 
+          if (isset($_POST['submit_'])){
+            echo "<span style='color:orange'>| Quiz Result: $score / 5</span>";
+          }
+        ?></h2>
       </div>
       <hr id = "line"></hr>
       </br> </br>
@@ -288,11 +292,6 @@
               <label for="answerD"> <font color="#95e7f3">D) All of the above </font></label>
           </div>
       </li>
-      <?php
-        if (isset($_POST['submit_'])){
-          echo "<p> Results: $score / 5 </p>";
-        }
-      ?>
       <br>
       <input type="submit" name="submit_" value="Submit Quiz" class="submitButton"/>
       <br><br>
