@@ -25,7 +25,7 @@
             <a href="lessons/variables.html"><div>Variables</div></a>
             <a href="lessons/arrays.html"><div>Arrays</div></a>
             <a href="lessons/conditionals.html"><div>If/Else</div></a>
-            <a href="lessons/switches.html"><div>Switches</div></a>
+            <a href="lessons/switches.php"><div>Switches</div></a>
             <a href="lessons/forloops.html"><div>For Loops</div></a>
             <a href="lessons/whileloops.html"><div>While Loops</div></a>
             <a href="lessons/final.html"><div>Final Challenge</div></a>

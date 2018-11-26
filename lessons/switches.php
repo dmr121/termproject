@@ -10,10 +10,65 @@
     <script>
 
     </script>
-    <title> Switch Statements </title>
+    <title> Switch Statements. </title>
     <meta charset = 'utf-8' />
   </head>
   <body>
+    <?php
+      if (isset($_POST['question1'])) {
+        $answer1 = $_POST['question1'];
+      } else {
+        $answer1 = " ";
+      }
+      if (isset($_POST['question2'])) {
+        $answer2 = $_POST['question2'];
+      } else {
+        $answer2 = " ";
+      }
+      if (isset($_POST['question3'])) {
+        $answer3 = $_POST['question3'];
+      } else {
+        $answer3 = " ";
+      }
+      if (isset($_POST['question4'])) {
+        $answer4 = $_POST['question4'];
+      } else {
+        $answer4 = " ";
+      }
+      if (isset($_POST['question5'])) {
+        $answer5 = $_POST['question5'];
+      } else {
+        $answer5 = " ";
+      }
+
+      $score = 0;
+
+      if ($answer1 == "C") { $score++; }
+      if ($answer2 == "A") { $score++; }
+      if ($answer3 == "A") { $score++; }
+      if ($answer4 == "B") { $score++; }
+      if ($answer5 == "D") { $score++; }
+
+      // Connect to MySQL
+      $db = mysqli_connect("db1.cs.uakron.edu:3306/ISP_dmr121", "dmr121", "Watermelons12345");
+          if (!$db) {
+               print "Error - Could not connect to MySQL";
+               exit;
+          }
+
+      // Select the database
+      $er = mysqli_select_db($db,"ISP_dmr121");
+      if (!$er) {
+          print "Error - Could not select the database";
+          exit;
+      }
+
+      if ($score == 5) {
+        mysqli_query($db, "INSERT INTO Minigames VALUES (-1, 1, -1, -1, -1, -1)");
+      } else {
+        mysqli_query($db, "INSERT INTO Minigames VALUES (-1, 0, -1, -1, -1, -1)");
+      }
+    ?>
     <div id = "menuBar" class = "container-fluid">
       <div id = "menuSpans" class = "row">
         <div class = "col-lg-7"></div>
@@ -25,7 +80,7 @@
             <a href="variables.html"><div>Variables</div></a>
             <a href="arrays.html"><div>Arrays</div></a>
             <a href="conditionals.html"><div>If/Else</div></a>
-            <a href="switches.html"><div>Switches</div></a>
+            <a href="switches.<?php  ?>"><div>Switches</div></a>
             <a href="forloops.html"><div>For Loops</div></a>
             <a href="whileloops.html"><div>While Loops</div></a>
             <a href="final.html"><div>Final Challenge</div></a>
@@ -145,7 +200,7 @@
     <hr id = "line"></hr>
     <div class="container">
       <h1 id="activityTitle">Test Yourself</h1>
-      <form action="../php/forloopResults.php" method="post" id="quiz">
+      <form action="switches.php" method="post" id="quiz">
         <li>
           <h3>What is the concept of Syntactic Sugar?</h3><!--Question1-->
           <div>
@@ -169,7 +224,7 @@
           <h3>What does the variable myVar represent?</h3><!--Question2-->
           <img src="../images/switchQ2.png" style="margin: 4px 0 10px 0;"/>
           <div>
-              <input type="radio" name="question2" id="answerA" value="A" />
+              <input type="radio" name="question2" id="answerA" value="A"/>
               <label for="answerA"> <font color="#95e7f3">A) It represents the test case </font></label>
           </div>
           <div>
@@ -188,7 +243,7 @@
       <li>
           <h3>In some cases, Switch statements are more efficient than If/Else</h3><!--Question3-->
           <div>
-              <input type="radio" name="question3" id="answerA" value="A" />
+              <input type="radio" name="question3" id="answerA" value="A"/>
               <label for="answerA"> <font color="#95e7f3">A) True </font></label>
           </div>
           <div>
@@ -230,6 +285,7 @@
               <label for="answerD"> <font color="#95e7f3">D) All of the above </font></label>
           </div>
       </li>
+      <?php echo "<p> Results: $score / 5 </p>"; ?>
       <br>
       <input type="submit" value="Submit Quiz" class="submitButton"/>
       <br><br>

@@ -14,6 +14,6 @@
     if ($answer4 == "B") { $score++; }
     if ($answer5 == "D") { $score++; }
 
-    echo "<div id='results'>$score / 5 correct</div>";
+    echo "<div id='results'> $score / 5 correct </div>";
 
 ?>
