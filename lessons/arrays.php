@@ -11,6 +11,58 @@
     <meta charset = 'utf-8' />
   </head>
   <body>
+    <?php
+      $score = 0;
+      if (isset($_POST['submit_'])) {
+        if (isset($_POST['question1'])) {
+          $answer1 = $_POST['question1'];
+        } else {
+          $answer1 = " ";
+        }
+        if (isset($_POST['question2'])) {
+          $answer2 = $_POST['question2'];
+        } else {
+          $answer2 = " ";
+        }
+        if (isset($_POST['question3'])) {
+          $answer3 = $_POST['question3'];
+        } else {
+          $answer3 = " ";
+        }
+        if (isset($_POST['question4'])) {
+          $answer4 = $_POST['question4'];
+        } else {
+          $answer4 = " ";
+        }
+
+        $score = 0;
+
+        if ($answer1 == "B") { $score++; }
+        if ($answer2 == "B") { $score++; }
+        if ($answer3 == "C") { $score++; }
+        if ($answer4 == "D") { $score++; }
+
+        // Connect to MySQL
+        $db = mysqli_connect("db1.cs.uakron.edu:3306/ISP_dmr121", "dmr121", "Watermelons12345");
+            if (!$db) {
+                 print "Error - Could not connect to MySQL";
+                 exit;
+            }
+
+        // Select the database
+        $er = mysqli_select_db($db,"ISP_dmr121");
+        if (!$er) {
+            print "Error - Could not select the database";
+            exit;
+        }
+
+        if ($score == 4) {
+          mysqli_query($db, "INSERT INTO Minigames VALUES (-1, -1, -1, -1, -1, 1)");
+        } else {
+          mysqli_query($db, "INSERT INTO Minigames VALUES (-1, -1, -1, -1, -1, 0)");
+        }
+      }
+    ?>
     <div id = "menuBar" class = "container-fluid">
       <div id = "menuSpans" class = "row">
         <div class = "col-lg-7"></div>
@@ -20,7 +72,7 @@
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
             <a href="variables.php"><div>Variables</div></a>
-            <a href="arrays.html"><div>Arrays</div></a>
+            <a href="arrays.php"><div>Arrays</div></a>
             <a href="conditionals.php"><div>If/Else</div></a>
             <a href="switches.php"><div>Switches</div></a>
             <a href="forloops.php"><div>For Loops</div></a>
@@ -29,7 +81,7 @@
           </div>
         </div>
         <div class ="col-lg-1" id="buttonHolder">
-          <a href="../statistics.html"><div id = "menuButton">Statistics</div></a>
+          <a href="../statistics.php"><div id = "menuButton">Statistics</div></a>
         </div>
         <div class ="col-lg-1" id="buttonHolder">
           <a href="../technical.html"><div id = "menuButton">Technical</div></a>
@@ -42,7 +94,11 @@
     <div id = "mainPage" class = "container">
       <div class = "container">
         <h1 id = "title"> Arrays </h1>
-          <h2 id = "subtitle"> Hold Your Data </h2>
+          <h2 id = "subtitle"> Hold Your Data <?php 
+          if (isset($_POST['submit_'])){
+            echo "<span style='color:orange'>| Quiz Result: $score / 4</span>";
+          }
+        ?></h2>
       </div>
       <hr id = "line"></hr>
       </br></br>
@@ -123,7 +179,7 @@
       <div class="container">
         <h1 id="activityTitle">Test Yourself</h1>
       </div>
-<form action="../php/arrayResults.php" method="post" id="quiz">
+<form action="arrays.php" method="post" id="quiz">
   <br><br>
   <li>
 
@@ -229,7 +285,7 @@
 
 </li>
 <br>
-<input type="submit" value="Submit Quiz" class="submitButton"/>
+<input type="submit" name="submit_" value="Submit Quiz" class="submitButton"/>
 </form>
 <br>
 
