@@ -76,7 +76,7 @@
             <a href="conditionals.php"><div>If/Else</div></a>
             <a href="switches.php"><div>Switches</div></a>
             <a href="forloops.php"><div>For Loops</div></a>
-            <a href="whileloops.html"><div>While Loops</div></a>
+            <a href="whileloops.php"><div>While Loops</div></a>
             <a href="final.html"><div>Final Challenge</div></a>
           </div>
         </div>
