@@ -183,3 +183,18 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   color: var(--main-text-color);
 }
+
+#nextLesson {
+  width: 200px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 0px 25px 25px 0px;
+  color: var(--accent-color);
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
