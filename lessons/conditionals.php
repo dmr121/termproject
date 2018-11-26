@@ -75,7 +75,7 @@
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
             <a href="variables.php"><div>Variables</div></a>
-            <a href="arrays.html"><div>Arrays</div></a>
+            <a href="arrays.php"><div>Arrays</div></a>
             <a href="conditionals.php"><div>If/Else</div></a>
             <a href="switches.php"><div>Switches</div></a>
             <a href="forloops.php"><div>For Loops</div></a>
@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class ="col-lg-1" id="buttonHolder">
-          <a href="../statistics.html"><div id = "menuButton">Statistics</div></a>
+          <a href="../statistics.php"><div id = "menuButton">Statistics</div></a>
         </div>
         <div class ="col-lg-1" id="buttonHolder">
           <a href="../technical.html"><div id = "menuButton">Technical</div></a>
@@ -287,7 +287,7 @@
         <!-- Page change buttons -->
         <div class="row">
           <div class="col"> <!-- Page back button -->
-            <a href="arrays.html">
+            <a href="arrays.php">
               <div id="previousLesson" style="float: left;">Previous Lesson</div>
             </a>
           </div>

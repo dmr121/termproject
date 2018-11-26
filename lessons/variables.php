@@ -81,7 +81,7 @@
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
             <a href="variables.php"><div>Variables</div></a>
-            <a href="arrays.html"><div>Arrays</div></a>
+            <a href="arrays.php"><div>Arrays</div></a>
             <a href="conditionals.php"><div>If/Else</div></a>
             <a href="switches.php"><div>Switches</div></a>
             <a href="forloops.php"><div>For Loops</div></a>
@@ -268,7 +268,7 @@
           </a>
         </div>
         <div class="col"> <!-- Page forward button -->
-          <a href="arrays.html">
+          <a href="arrays.php">
             <div id="nextLesson" style="float: right;">Next Lesson</div>
           </a>
         </div>

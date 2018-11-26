@@ -23,7 +23,7 @@
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
             <a href="lessons/variables.php"><div>Variables</div></a>
-            <a href="lessons/arrays.html"><div>Arrays</div></a>
+            <a href="lessons/arrays.php"><div>Arrays</div></a>
             <a href="lessons/conditionals.php"><div>If/Else</div></a>
             <a href="lessons/switches.php"><div>Switches</div></a>
             <a href="lessons/forloops.php"><div>For Loops</div></a>
