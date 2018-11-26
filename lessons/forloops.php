@@ -12,58 +12,61 @@
   </head>
   <body>
     <?php
-      if (isset($_POST['question1'])) {
-        $answer1 = $_POST['question1'];
-      } else {
-        $answer1 = " ";
-      }
-      if (isset($_POST['question2'])) {
-        $answer2 = $_POST['question2'];
-      } else {
-        $answer2 = " ";
-      }
-      if (isset($_POST['question3'])) {
-        $answer3 = $_POST['question3'];
-      } else {
-        $answer3 = " ";
-      }
-      if (isset($_POST['question4'])) {
-        $answer4 = $_POST['question4'];
-      } else {
-        $answer4 = " ";
-      }
-      if (isset($_POST['question5'])) {
-        $answer5 = $_POST['question5'];
-      } else {
-        $answer5 = " ";
-      }
-
       $score = 0;
+      if (isset($_POST['submit_'])) {
+        if (isset($_POST['question1'])) {
+          $answer1 = $_POST['question1'];
+        } else {
+          $answer1 = " ";
+        }
+        if (isset($_POST['question2'])) {
+          $answer2 = $_POST['question2'];
+        } else {
+          $answer2 = " ";
+        }
+        if (isset($_POST['question3'])) {
+          $answer3 = $_POST['question3'];
+        } else {
+          $answer3 = " ";
+        }
+        if (isset($_POST['question4'])) {
+          $answer4 = $_POST['question4'];
+        } else {
+          $answer4 = " ";
+        }
+        if (isset($_POST['question5'])) {
+          $answer5 = $_POST['question5'];
+        } else {
+          $answer5 = " ";
+        }
 
-      if ($answer1 == "B") { $score++; }
-      if ($answer2 == "C") { $score++; }
-      if ($answer3 == "B") { $score++; }
-      if ($answer4 == "A") { $score++; }
-      if ($answer5 == "D") { $score++; }
+        $score = 0;
 
-      // Connect to MySQL
-      $db = mysqli_connect("db1.cs.uakron.edu:3306/ISP_dmr121", "dmr121", "Watermelons12345");
-          if (!$db) {
-               print "Error - Could not connect to MySQL";
-               exit;
-          }
+        if ($answer1 == "B") { $score++; }
+        if ($answer2 == "C") { $score++; }
+        if ($answer3 == "B") { $score++; }
+        if ($answer4 == "A") { $score++; }
+        if ($answer5 == "D") { $score++; }
 
-      // Select the database
-      $er = mysqli_select_db($db,"ISP_dmr121");
-      if (!$er) {
-          print "Error - Could not select the database";
-          exit;
-      }
+        // Connect to MySQL
+        $db = mysqli_connect("db1.cs.uakron.edu:3306/ISP_dmr121", "dmr121", "Watermelons12345");
+            if (!$db) {
+                 print "Error - Could not connect to MySQL";
+                 exit;
+            }
 
-      if ($score == 5) {
-        mysqli_query($db, "INSERT INTO Minigames VALUES (-1, -1, 1, -1, -1, -1)");
-      } else {
-        mysqli_query($db, "INSERT INTO Minigames VALUES (-1, 1, 0, -1, -1, -1)");
+        // Select the database
+        $er = mysqli_select_db($db,"ISP_dmr121");
+        if (!$er) {
+            print "Error - Could not select the database";
+            exit;
+        }
+
+        if ($score == 5) {
+          mysqli_query($db, "INSERT INTO Minigames VALUES (-1, -1, 1, -1, -1, -1)");
+        } else {
+          mysqli_query($db, "INSERT INTO Minigames VALUES (-1, 1, 0, -1, -1, -1)");
+        }
       }
     ?>
     <div id = "menuBar" class = "container-fluid">
