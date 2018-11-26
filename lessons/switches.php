@@ -288,7 +288,11 @@
               <label for="answerD"> <font color="#95e7f3">D) All of the above </font></label>
           </div>
       </li>
-      <?php echo "<p> Results: $score / 5 </p>"; ?>
+      <?php
+        if (isset($_POST['submit_'])){
+          echo "<p> Results: $score / 5 </p>";
+        }
+      ?>
       <br>
       <input type="submit" name="submit_" value="Submit Quiz" class="submitButton"/>
       <br><br>
