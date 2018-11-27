@@ -197,6 +197,9 @@
         <br>
         <input type="submit" name="submit_" value="Submit Quiz" class="submitButton"/>
         <br><br>
+        <a href="https://docs.google.com/document/d/1bjA1QOObVtZqrxzVXagJQrJRl8OXGGh-cBWQaEg5hsU/edit?usp=sharing"><p> Final Report </p></a>
+        <a href="https://docs.google.com/presentation/d/1nXgPUDTlt63Vf1a157bJpCIl5VhWt2VE5W3XPPAhWfY/edit?usp=sharing"><p> Powerpoint </p></a>
+
         <hr id="line"></hr>
         </form>
       </div>
