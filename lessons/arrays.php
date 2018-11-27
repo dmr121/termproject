@@ -132,8 +132,6 @@
           </div>
           <div class="col">
             <h1>Array Syntax</h1>
-            <p>
-              To declare an array, we use this syntax:</p>
 			  To create an array of integers that has a capacity of 10 we would type:
             </p>
             <p><img src="../images/array1.png" id="array1"/> </p>
@@ -166,8 +164,8 @@
 			means that you would need to change the element with the index of "4".
 			The code below accesses the numbers array, then accesses the index of "4"
 			and changes it's contents to "50".  This is acceptable as long as the new
-			element that you are entering is the similar type of the other elements.
-			In this case it works out because "50" is an integer.
+			element that you are entering in has the same type as the other elements.
+			In this case it works out because "50" is an integer as well.
 		</p>
 			  <p><img src="../images/array4.png" id="array4"/> </p>
 			</p>

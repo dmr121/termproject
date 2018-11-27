@@ -132,7 +132,7 @@
             	Now the only difference is that we type:
             	<code>else</code> instead of <code>otherwise</code>
             	when we use it in a C++ program. This is why it
-            	is called and If/Else statement.
+            	is called an If/Else statement.
             </p>
           </div>
 
@@ -255,7 +255,7 @@
 
 <li>
 
-    <h3>If statements do not utilize the else feature unless a certain what is meant?</h3><br>
+    <h3>If statements do not utilize the else feature unless a certain what is met?</h3><br>
 
     <div>
         <input type="radio" name="question4" id="answerA" value="A" />
