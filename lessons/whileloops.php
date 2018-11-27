@@ -197,6 +197,7 @@
         <br>
         <input type="submit" name="submit_" value="Submit Quiz" class="submitButton"/>
         <br><br>
+
         <hr id="line"></hr>
         </form>
       </div>
