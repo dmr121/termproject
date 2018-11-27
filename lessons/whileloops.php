@@ -74,7 +74,7 @@
       <div id = "menuSpans" class = "row">
         <div class = "col-lg-7"></div>
         <div class ="col-lg-1" id="buttonHolder">
-          <a href="../index.html"><div id = "menuButton">Home</div></a>
+          <a href="../prj.html"><div id = "menuButton">Home</div></a>
         </div>
         <div id = "menuButton" class = "col-lg-1" style="cursor:default;"><span>Lessons</span>
           <div id = "dropdown">
