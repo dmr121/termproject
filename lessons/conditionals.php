@@ -176,104 +176,105 @@
   <br><br>
   <li>
 
-    <h3>Question 1</h3><br>
+    <h3>When is the best time to use an If/Else Statement?</h3><br>
 
     <div>
         <input type="radio" name="question1" id="answerA" value="A" />
-        <label for="answerA"> <font color="#95e7f3">A) </font></label>
+        <label for="answerA"> <font color="#95e7f3">A) When you only have one task to complete, such as output something to the console.</font></label>
     </div>
 
     <div>
         <input type="radio" name="question1" id="answerB" value="B" />
-        <label for="answerB"> <font color="#95e7f3">B) </font></label>
+        <label for="answerB"> <font color="#95e7f3">B) When you have more than one task to complete and a decision must be made.</font></label>
     </div>
 
     <div>
         <input type="radio" name="question1" id="answerC" value="C" />
-        <label for="answerC"> <font color="#95e7f3">C) </font></label>
+        <label for="answerC"> <font color="#95e7f3">C) When using any type of array.</font></label>
     </div>
 
     <div>
         <input type="radio" name="question1" id="answerD" value="D" />
-        <label for="answerD"> <font color="#95e7f3">D) </font></label>
+        <label for="answerD"> <font color="#95e7f3">D) When you are not certain if a variable is set correctly or not.</font></label>
     </div><br>
 
 </li>
 
 <li>
 
-    <h3>Question 2</h3><br>
+    <h3>What is the correct syntax for creating an if statement?</h3><br>
 
     <div>
         <input type="radio" name="question2" id="answerA" value="A" />
-        <label for="answerA"> <font color="#95e7f3">A) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerA"> <font color="#95e7f3">A) <img src="../images/conAnswer1.png" id="conAsnwer1"/> </font></label>
     </div>
 
     <div>
         <input type="radio" name="question2" id="answerB" value="B" />
-        <label for="answerB"> <font color="#95e7f3">B) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerB"> <font color="#95e7f3">B) <img src="../images/conAnswer2.png" id="conAnswer2"/> </font></label>
     </div>
 
     <div>
         <input type="radio" name="question2" id="answerC" value="C" />
-        <label for="answerC"> <font color="#95e7f3">C) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerC"> <font color="#95e7f3">C) <img src="../images/conAnswer3.png" id="conAnswer3"/> </font></label>
     </div>
 
     <div>
         <input type="radio" name="question2" id="answerD" value="D" />
-        <label for="answerD"> <font color="#95e7f3">D) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerD"> <font color="#95e7f3">D) <img src="../images/conAnswer4.png" id="conAnswer4"/> </font></label>
     </div><br>
 
 </li>
 
 <li>
 
-    <h3>Question 3</h3><br>
+    <h3>What will be the output of this If/Else statement?</h3><br>
+    <p><img src="../images/conStatement.png" id=""/></p>
 
     <div>
         <input type="radio" name="question3" id="answerA" value="A" />
-        <label for="answerA"> <font color="#95e7f3">A) <img src="../NEWPIC.png" id=""/> </font></label>
+        <label for="answerA"> <font color="#95e7f3">A) Merry Christmas </font></label>
     </div>
 
     <div>
         <input type="radio" name="question3" id="answerB" value="B" />
-        <label for="answerB"> <font color="#95e7f3">B) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerB"> <font color="#95e7f3">B) Merry Christmas! </font></label>
     </div>
 
     <div>
         <input type="radio" name="question3" id="answerC" value="C" />
-        <label for="answerC"> <font color="#95e7f3">C) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerC"> <font color="#95e7f3">C) Happy Birthday! </font></label>
     </div>
 
     <div>
         <input type="radio" name="question3" id="answerD" value="D" />
-        <label for="answerD"> <font color="#95e7f3">D) <img src="../images/NEWPIC.png" id=""/> </font></label>
+        <label for="answerD"> <font color="#95e7f3">D) Happy Birthday </font></label>
     </div><br>
 
 </li>
 
 <li>
 
-    <h3>Question 4</h3><br>
+    <h3>If statements do not utilize the else feature unless a certain what is meant?</h3><br>
 
     <div>
         <input type="radio" name="question4" id="answerA" value="A" />
-        <label for="answerA"> <font color="#95e7f3">A) <img src="../images/NEWPIC.png" id=""/></font></label>
+        <label for="answerA"> <font color="#95e7f3">A) Top score</font></label>
     </div>
 
     <div>
         <input type="radio" name="question4" id="answerB" value="B" />
-        <label for="answerB"> <font color="#95e7f3">B) <img src="../images/NEWPIC.png" id=""/></font></label>
+        <label for="answerB"> <font color="#95e7f3">B) While Statement</font></label>
     </div>
 
     <div>
         <input type="radio" name="question4" id="answerC" value="C" />
-        <label for="answerC"> <font color="#95e7f3">C) <img src="../images/NEWPIC.png" id=""/></font></label>
+        <label for="answerC"> <font color="#95e7f3">C) For Loop</font></label>
     </div>
 
     <div>
         <input type="radio" name="question4" id="answerD" value="D" />
-        <label for="answerD"> <font color="#95e7f3">D) <img src="../images/NEWPIC.png" id=""/></font></label>
+        <label for="answerD"> <font color="#95e7f3">D) Condition</font></label>
     </div><br>
 
 </li>
